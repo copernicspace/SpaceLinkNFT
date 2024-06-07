@@ -55,9 +55,9 @@ task("functions-request", "Initiates an on-demand request from a Functions consu
     const consumerContract = consumerFactory.attach(contractAddr)
 
     // Get requestConfig from the specified config file
-    const requestConfig = require(path.isAbsolute(taskArgs.configpath)
-      ? taskArgs.configpath
-      : path.join(process.cwd(), taskArgs.configpath))
+    const requestConfig = require(
+      path.isAbsolute(taskArgs.configpath) ? taskArgs.configpath : path.join(process.cwd(), taskArgs.configpath)
+    )
 
     // Simulate the request
     if (taskArgs.simulate) {

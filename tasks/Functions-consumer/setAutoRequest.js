@@ -83,9 +83,9 @@ const setAutoRequest = async (contract, taskArgs) => {
   const autoConsumerContractFactory = await ethers.getContractFactory("AutomatedFunctionsConsumer")
   const autoConsumerContract = await autoConsumerContractFactory.attach(contract)
 
-  const requestConfig = require(path.isAbsolute(taskArgs.configpath)
-    ? taskArgs.configpath
-    : path.join(process.cwd(), taskArgs.configpath))
+  const requestConfig = require(
+    path.isAbsolute(taskArgs.configpath) ? taskArgs.configpath : path.join(process.cwd(), taskArgs.configpath)
+  )
 
   // Simulate the request
   if (taskArgs.simulate) {

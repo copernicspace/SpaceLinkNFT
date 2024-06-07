@@ -1,23 +1,23 @@
 {
-    "name": "Copernic Space Rocket Data NFT",
-    "description": "An NFT representing rocket data",
-    "image": "ipfs://<IPFS_HASH_OF_YOUR_IMAGE>",
-    "attributes": [
-        {
-            "trait_type": "Distance From Earth",
-            "value": 134086
-        },
-        {
-            "trait_type": "Distance To Moon",
-            "value": 138285
-        },
-        {
-            "trait_type": "Speed",
-            "value": 10861
-        },
-        {
-            "trait_type": "State",
-            "value": "In transit"
-        }
-    ]
+  "name": "Copernic Space Rocket Data NFT",
+  "description": "An NFT representing rocket data",
+  "image": "ipfs://<IPFS_HASH_OF_YOUR_IMAGE>",
+  "attributes": [
+    {
+      "trait_type": "Distance From Earth",
+      "value": 134086
+    },
+    {
+      "trait_type": "Distance To Moon",
+      "value": 138285
+    },
+    {
+      "trait_type": "Speed",
+      "value": 10861
+    },
+    {
+      "trait_type": "State",
+      "value": "In transit"
+    }
+  ]
 }

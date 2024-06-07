@@ -10,9 +10,9 @@ task("functions-simulate-script", "Executes the JavaScript source code locally")
     types.string
   )
   .setAction(async (taskArgs, hre) => {
-    const requestConfig = require(path.isAbsolute(taskArgs.configpath)
-      ? taskArgs.configpath
-      : path.join(process.cwd(), taskArgs.configpath))
+    const requestConfig = require(
+      path.isAbsolute(taskArgs.configpath) ? taskArgs.configpath : path.join(process.cwd(), taskArgs.configpath)
+    )
 
     // Simulate the JavaScript execution locally
     const { responseBytesHexstring, errorString, capturedTerminalOutput } = await simulateScript(requestConfig)

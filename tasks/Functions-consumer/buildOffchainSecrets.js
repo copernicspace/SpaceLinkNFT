@@ -33,9 +33,9 @@ task(
     await secretsManager.initialize()
 
     // Get the secrets object from  Functions-request-config.js or other specific request config.
-    const requestConfig = require(path.isAbsolute(taskArgs.configpath)
-      ? taskArgs.configpath
-      : path.join(process.cwd(), taskArgs.configpath))
+    const requestConfig = require(
+      path.isAbsolute(taskArgs.configpath) ? taskArgs.configpath : path.join(process.cwd(), taskArgs.configpath)
+    )
 
     if (!requestConfig.secrets || requestConfig.secrets.length === 0) {
       console.log("No secrets found in the request config.")

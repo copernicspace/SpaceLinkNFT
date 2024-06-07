@@ -26,9 +26,9 @@ task(
 
     let latestResponse = await consumerContract.s_lastResponse()
     if (latestResponse.length > 0 && latestResponse !== "0x") {
-      const requestConfig = require(path.isAbsolute(taskArgs.configpath)
-        ? taskArgs.configpath
-        : path.join(process.cwd(), taskArgs.configpath))
+      const requestConfig = require(
+        path.isAbsolute(taskArgs.configpath) ? taskArgs.configpath : path.join(process.cwd(), taskArgs.configpath)
+      )
       const decodedResult = decodeResult(latestResponse, requestConfig.expectedReturnType).toString()
       console.log(`\nOn-chain response represented as a hex string: ${latestResponse}\n${decodedResult}`)
     } else if (latestResponse == "0x") {

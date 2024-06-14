@@ -19,6 +19,10 @@ module.exports = {
   solidity: {
     compilers: [
       {
+        version: "0.8.20",
+        settings: SOLC_SETTINGS,
+      },
+      {
         version: "0.8.19",
         settings: SOLC_SETTINGS,
       },
@@ -45,17 +49,8 @@ module.exports = {
   },
   etherscan: {
     apiKey: {
-      mainnet: networks.ethereum.verifyApiKey,
-      avalanche: networks.avalanche.verifyApiKey,
       polygon: networks.polygon.verifyApiKey,
-      sepolia: networks.ethereumSepolia.verifyApiKey,
-      polygonMumbai: networks.polygonMumbai.verifyApiKey,
       polygonAmoy: networks.polygonAmoy.verifyApiKey,
-      avalancheFujiTestnet: networks.avalancheFuji.verifyApiKey,
-      arbitrum: networks.arbitrum.verifyApiKey,
-      arbitrumSepolia: networks.arbitrumSepolia.verifyApiKey,
-      baseSepolia: networks.baseSepolia.verifyApiKey,
-      optimismSepolia: networks.optimismSepolia.verifyApiKey,
     },
     customChains: [
       {

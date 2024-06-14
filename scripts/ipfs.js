@@ -1,3 +1,5 @@
+// Grant wants to use Filecoin as the IPFS provider so we need to change this
+
 require("dotenv").config()
 const pinataSDK = require("@pinata/sdk")
 const fs = require("fs")

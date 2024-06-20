@@ -9,7 +9,7 @@ import {ConfirmedOwner} from "@chainlink/contracts/src/v0.8/shared/access/Confir
 import {FunctionsRequest} from "@chainlink/contracts/src/v0.8/functions/v1_0_0/libraries/FunctionsRequest.sol";
 import {Base64} from "@openzeppelin/contracts/utils/Base64.sol";
 
-contract CopernicSpaceLink is ERC721, ERC721URIStorage, FunctionsClient, ConfirmedOwner {
+contract RocketConsumer is ERC721, ERC721URIStorage, FunctionsClient, ConfirmedOwner {
     using FunctionsRequest for FunctionsRequest.Request;
     using Strings for uint256;
 

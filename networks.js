@@ -49,7 +49,7 @@ const networks = {
     gatewayUrls: ["https://01.functions-gateway.chain.link/", "https://02.functions-gateway.chain.link/"],
   },
   polygonAmoy: {
-    url: process.env.AMOY_RPC_URL || "UNSET", // h
+    url: process.env.POLYGON_AMOY_RPC_URL || "UNSET", // h
     gasPrice: undefined,
     nonce: undefined,
     accounts,
